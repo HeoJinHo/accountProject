@@ -1,14 +1,13 @@
 package com.example.accountproject.models.interfaces;
+
 import com.example.accountproject.documents.MemberDTO;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import com.example.accountproject.models.common.CommonRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface MemberSv extends MongoRepository<MemberDTO, String> {
+public interface MemberSv extends CommonRepository<MemberDTO, String> {
 
 
-    MemberDTO membersave(MemberDTO memberDTO);
-
+    MemberDTO member_save(MemberDTO memberDTO);
 
 }

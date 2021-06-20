@@ -19,7 +19,7 @@
         <tbody>
             <c:forEach var="item" items="${data}">
             <tr>
-                <td>${item.memberId}</td>
+                <td><a href="/member/getMember">${item.memberId}></a></td>
                 <td>${item.memberPwd}</td>
                 <td>${item.memberName}</td>
             </tr>

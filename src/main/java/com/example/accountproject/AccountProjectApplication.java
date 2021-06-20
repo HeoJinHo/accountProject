@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-@EnableMongoRepositories(basePackageClasses = com.example.accountproject.models.interfaces.MemberSv.class)
+//@EnableMongoRepositories(basePackageClasses = com.example.accountproject.models.interfaces.MemberSv.class)
 @SpringBootApplication
 public class AccountProjectApplication {
 

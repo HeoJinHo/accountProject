@@ -8,7 +8,7 @@
 <body>
 
     <div class="container">
-        <form action="/member/join" method="post" onsubmit="confirm('저장 하시겠습니까?')">
+        <form action="/member/join" method="post">  <!--onsubmit="confirm('저장 하시겠습니까?')">-->
             <h1>회원가입</h1>
 
             <label for="memberId">아이디</label>
@@ -30,13 +30,13 @@
             <input type="tel" name="memberPhone" id="memberPhone" class="form-control">
 
             <label for="memberZipCode">우편번호</label>
-            <input type="text" name="memberZipCode" id="memberZipCode" class="form-control">
+            <input type="text" name="memberDetail.memberZipCode" id="memberZipCode" class="form-control">
 
             <label for="memberAddress">주소</label>
-            <input type="text" name="memberAddress" id="memberAddress" class="form-control">
+            <input type="text" name="memberDetail.memberAddress" id="memberAddress" class="form-control">
 
             <label for="memberAddressDetail">상세주소</label>
-            <input type="text" name="memberAddressDetail" id="memberAddressDetail" class="form-control">
+            <input type="text" name="memberDetail.memberAddressDetail" id="memberAddressDetail" class="form-control">
 
             <label for="memberAuth">권한</label>
             <select name="memberAuth" id="memberAuth" class="form-control">

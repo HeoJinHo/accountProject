@@ -1,7 +1,10 @@
 package com.example.accountproject.documents;
 
+import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.context.annotation.Primary;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -10,8 +13,10 @@ import java.util.Date;
 
 @Getter
 @Setter
-@Document
+@Document(collection = "member")
+@Data
 public class MemberDTO {
+
 
     /*사용자 아이디*/
     @Id
@@ -32,21 +37,10 @@ public class MemberDTO {
     /*사용자 전화번호*/
     private String memberPhone;
 
-    /*사용자 우편번호*/
-    private String memberZipCode;
-
-    /*사용자 주소*/
-    private String memberAddress;
-
-    /*사용자 상세주소*/
-    private String memberAddressDetail;
+    private MemberDetailDTO memberDetail;
 
     /*사용자 권한*/
     private String memberAuth;
-
-    /*회원가입일 및 등록일자*/
-    @CreatedDate
-    private Date createdDate;
 
 
 }

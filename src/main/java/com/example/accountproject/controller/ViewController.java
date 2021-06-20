@@ -10,9 +10,6 @@ public class ViewController {
     @RequestMapping(value="/join_form")
     public String jogin_form()
     {
-
-        System.out.println("asdas");
-
         return "join_form";
     }
 
